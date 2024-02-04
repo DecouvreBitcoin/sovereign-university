@@ -73,13 +73,14 @@ export const createCallbackLnurlAuth =
       };
     }
 
-    const { uid } = await findOrCreateUser();
+    const { uid, role } = await findOrCreateUser();
 
     await redis.del(`lnurl-auth:${k1}`);
 
     await redis.set(`session:${challenge.sessionId}`, {
       ...challenge.session,
       uid,
+      role,
     });
 
     events.emit('lnurl-auth:logged', { sessionId: challenge.sessionId, uid });

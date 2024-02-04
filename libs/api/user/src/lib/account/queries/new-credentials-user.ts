@@ -27,6 +27,6 @@ export const newCredentialsUserQuery = ({
       ${passwordHash},
       ${email || null}, 
       ${contributorId})
-    RETURNING uid, username, display_name, email, contributor_id;
+    RETURNING uid, username, display_name, email, contributor_id, role;
   `;
 };

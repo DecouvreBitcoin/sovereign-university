@@ -8,7 +8,8 @@ export const getUserDetailsQuery = (uid: string) => {
       username,
       email,
       contributor_id,
-      created_at
+      created_at,
+      role
     FROM users.accounts
     WHERE uid = ${uid};
   `;

@@ -6,6 +6,8 @@ import superjson from 'superjson';
 import { OpenApiMeta } from 'trpc-openapi';
 import { ZodError } from 'zod';
 
+import { UserRole } from '@sovereign-university/types';
+
 import type { Dependencies } from './dependencies';
 
 dotenv.config();
@@ -39,6 +41,7 @@ export type ContextInner = inferAsyncReturnType<typeof createContextInner>;
 interface UserContext {
   user?: {
     uid: string;
+    role: UserRole;
   };
 }
 

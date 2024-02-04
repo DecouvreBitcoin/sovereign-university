@@ -1,1 +1,1 @@
-export { enforceAuthenticatedUserMiddleware } from './auth';
+export { cacheMiddleware } from './cache';

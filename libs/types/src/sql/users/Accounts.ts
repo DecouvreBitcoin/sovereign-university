@@ -21,6 +21,8 @@ export default interface Accounts {
   created_at: number;
 
   updated_at: number;
+
+  role: string;
 }
 
 /** Represents the initializer for the table users.accounts */
@@ -43,6 +45,9 @@ export interface AccountsInitializer {
 
   /** Default value: now() */
   updated_at?: number;
+
+  /** Default value: 'student'::character varying */
+  role?: string;
 }
 
 /** Represents the mutator for the table users.accounts */
@@ -62,4 +67,6 @@ export interface AccountsMutator {
   created_at?: number;
 
   updated_at?: number;
+
+  role?: string;
 }

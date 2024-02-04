@@ -29,7 +29,7 @@ export const newLnurlUserQuery = ({
       SELECT uid, ${publicKey} FROM inserted_user
       RETURNING uid
     )
-    SELECT iu.uid, iu.username, iu.display_name, iu.contributor_id 
+    SELECT iu.uid, iu.username, iu.display_name, iu.contributor_id, iu.role
     FROM inserted_user iu;
   `;
 };

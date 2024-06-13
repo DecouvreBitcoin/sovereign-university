@@ -10,6 +10,7 @@ import { NodeNetwork } from './pages/node-network.tsx';
 import { NotFound } from './pages/not-found.tsx';
 import { ProfessorDetail } from './pages/professor-detail.tsx';
 import { ProfessorExplorer } from './pages/professor-explorer.tsx';
+import { PublicCommunicationPage } from './pages/public-communication.tsx';
 import { TermsAndConditions } from './pages/terms-and-conditions.tsx';
 import { UnderConstruction } from './pages/under-construction.tsx';
 import { ValidateEmailChangePage } from './pages/validate-email-change.tsx';
@@ -86,6 +87,12 @@ export const validateEmailChangeRoute = createRoute({
   component: ValidateEmailChangePage,
 });
 
+export const publicCommunicationRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/public-communication',
+  component: PublicCommunicationPage,
+});
+
 export const miscRoutes = [
   globalNotFoundRoute,
   homeRoute,
@@ -99,4 +106,5 @@ export const miscRoutes = [
   underConstructionRoute,
   termsAndConditionsROute,
   validateEmailChangeRoute,
+  publicCommunicationRoute,
 ];

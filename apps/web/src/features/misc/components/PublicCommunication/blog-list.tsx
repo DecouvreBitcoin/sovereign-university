@@ -5,7 +5,7 @@ import type { BlogBlock } from './data.ts';
 export const BlogList = (props: { blogList: BlogBlock[] }) => {
   if (props.blogList.length === 0) {
     return (
-      <p className="text-black p-50 justify-center text-[40px] font-medium">
+      <p className="text-black p-[50px] justify-center text-[40px] font-medium mx-auto">
         There are no blog posts at this time
       </p>
     );
@@ -16,8 +16,8 @@ export const BlogList = (props: { blogList: BlogBlock[] }) => {
         Latest blog post
       </h3>
 
-      <div className="mb-[47px] flex flex-row bg-newGray-6 p-[30px] space-x-[20px] rounded-[30px] items-center">
-        <div className="flex-1 max-w-[530px]">
+      <div className="mb-[47px] flex flex-col lg:flex-row bg-newGray-6 p-[30px] space-x-[20px] rounded-[30px] items-center">
+        <div className="flex-1 max-w-[530px] order-2 lg:order-1">
           <h2 className="text-darkOrange-5 mb-[22px] text-[48px] leading-[56px]">
             {props.blogList[0].title}
           </h2>
@@ -46,7 +46,7 @@ export const BlogList = (props: { blogList: BlogBlock[] }) => {
           </div>
         </div>
 
-        <div className="max-w-[510px] max-h-[370px]">
+        <div className="max-w-[510px] max-h-[370px] order-1 lg:order-2">
           <img
             className="rounded-[20px]"
             src={props.blogList[0].featuredImage}

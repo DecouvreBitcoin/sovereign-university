@@ -174,7 +174,7 @@ export const LegalInformation = () => {
           id={`${tab.id}-panel`}
           aria-labelledby={tab.id}
         >
-          <div className="flex flex-row text-center lg:justify-start lg:text-start space-x-[21px] w-[1440px]">
+          <div className="flex flex-row text-center lg:justify-start lg:text-start space-x-[21px] lg:w-[1440px]">
             <tab.component />
           </div>
 

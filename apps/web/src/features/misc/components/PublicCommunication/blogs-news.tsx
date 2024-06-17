@@ -69,7 +69,7 @@ export const BlogsNews = () => {
         ))}
       </Tabs.List>
 
-      <div className="hidden md:flex flex-row text-center lg:justify-start lg:text-start space-x-[21px]">
+      <div className="flex flex-row text-center lg:justify-start lg:text-start space-x-[21px]">
         <BlogList
           blogList={data.content.filter(
             (blog) =>

@@ -1,7 +1,6 @@
 import * as Tabs from '@radix-ui/react-tabs';
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-
-// import { useState } from 'react';
 
 import { PageLayout } from '#src/components/PageLayout/index.tsx';
 import { BlogsNews } from '#src/features/misc/components/PublicCommunication/blogs-news.tsx';
@@ -22,14 +21,7 @@ const mainTabs = [
 
 export const PublicCommunicationPage = () => {
   const { t } = useTranslation();
-  //
-  //   const [selectedSubTab, setSelectedSubTab] = useState(
-  //     subTabs[mainTabs[0].id][0].id,
-  //   );
-
-  //   const handleSubTabChange = (value: string) => {
-  //     setSelectedSubTab(value);
-  //   };
+  const [activeTab, setActiveTab] = useState('tab1');
 
   return (
     <PageLayout
@@ -38,7 +30,11 @@ export const PublicCommunicationPage = () => {
       title={t('publicCommunication.title')}
       description={t('publicCommunication.description')}
     >
-      <Tabs.Root className="TabsRoot" defaultValue="tab1">
+      <Tabs.Root
+        className="TabsRoot"
+        defaultValue="tab1"
+        onValueChange={setActiveTab}
+      >
         <Tabs.List
           className="TabsList flex flex-row mx-auto justify-center lg:pb-[40px] lg:mt-[27px] border-0 md:border-b-2 space-x-[21px] transition-all duration-300"
           aria-label="Manage your account"
@@ -47,9 +43,14 @@ export const PublicCommunicationPage = () => {
           {mainTabs.map((tab) => (
             <Tabs.Trigger
               key={tab.id}
-              className="TabsTrigger lg:px-[18px] lg:py-[14px] lg:text-xl lg:leading-[24px] font-normal lg:!font-medium rounded-2xl text-[16px] leading-[16px] py-[7px] px-[10px] bg-transparent text-darkOrange-5 border border-darkOrange-5 focus:bg-darkOrange-5 focus:text-white active:bg-darkOrange-5 active:text-white active:scale-95 transition-colors duration-150"
+              className={`TabsTrigger lg:px-[18px] lg:py-[14px] lg:text-xl lg:leading-[24px] font-normal lg:!font-medium rounded-2xl text-[16px] leading-[16px] py-[7px] px-[10px] transition-colors duration-150 ${
+                activeTab === tab.id
+                  ? 'bg-darkOrange-5 text-white scale-95'
+                  : 'text-darkOrange-5 border bg-transparent border-darkOrange-5'
+              }`}
               value={tab.id}
               role="tab"
+              onClick={() => setActiveTab(tab.id)}
             >
               {t(tab.label)}
             </Tabs.Trigger>
@@ -65,7 +66,7 @@ export const PublicCommunicationPage = () => {
             id={`${tab.id}-panel`}
             aria-labelledby={tab.id}
           >
-            <div className="hidden md:flex flex-row text center justify-center space-x-[21px]">
+            <div className="flex flex-row text center justify-center space-x-[21px]">
               {tab.component()}
             </div>
 

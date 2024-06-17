@@ -34,17 +34,17 @@ const blogTabs = [
 ];
 
 export const BlogsNews = () => {
+  const { t } = useTranslation();
   const [selectedMainTab, setSelectedMainTab] = useState(blogTabs[0].id);
 
   const handleMainTabChange = (value: string) => {
     setSelectedMainTab(value);
   };
 
-  const { t } = useTranslation();
   return (
     <Tabs.Root
       className="TabsRoot px-3"
-      defaultValue="contact"
+      value={selectedMainTab}
       onValueChange={handleMainTabChange}
     >
       <Tabs.List
@@ -55,16 +55,21 @@ export const BlogsNews = () => {
         {blogTabs.map((tab) => (
           <Tabs.Trigger
             key={tab.id}
-            className="TabsTrigger lg:px-[18px] lg:py-[14px] lg:text-xl lg:leading-[24px] font-normal text-[16px] leading-[16px] py-[7px] px-[10px] active:!border-darkOrange-5 active:!text-black border-darkOrange-0 text-[#050A14] opacity-50 transition-all duration-300 border-b-2"
+            className={`TabsTrigger lg:px-[18px] lg:py-[14px] lg:text-xl lg:leading-[24px] font-normal text-[16px] leading-[16px] py-[7px] px-[10px] transition-all duration-300 border-b-4 ${
+              selectedMainTab === tab.id
+                ? 'border-darkOrange-5 text-black font-bold'
+                : 'border-darkOrange-0 text-[#050A14] opacity-50'
+            }`}
             value={tab.id}
             role="tab"
+            onClick={() => setSelectedMainTab(tab.id)}
           >
             {t(tab.label)}
           </Tabs.Trigger>
         ))}
       </Tabs.List>
 
-      <div className="hidden md:flex flex-row text-center lg:justify-start lg:text-start  space-x-[21px]">
+      <div className="hidden md:flex flex-row text-center lg:justify-start lg:text-start space-x-[21px]">
         <BlogList
           blogList={data.content.filter(
             (blog) =>

@@ -20,12 +20,12 @@ export const blogList: BlogListType = {
       title: 'Benin community joining the Network',
       category: 'network',
       tags: ['network', 'bitcoin'],
-      author: 'Doe Irva',
+      author: 'Rogzy',
       createdAt: new Date(),
       featuredImage:
         'https://planb.network/cdn/f346b207c81e4bcf5335c947690bb00c758a4f97/resources/conference/lecture-rockstardev/assets/thumbnail.webp',
       excerpt:
-        'Bitcoin is now a topic to be taught at school in El Salvador and in the future in other countries',
+        'Short description....Destiné aux joueurs avertis et aux compétiteurs dans l’âme, du 28/03 au 28/04 cet event est là pour vous mettre au défi; Short description....Destiné aux joueurs avertis et aux compétiteurs dans l’âme, du 28/03 au 28/04 cet event est là pour vous mettre au défi',
       content:
         'Bitcoin is now a topic to be taught at school in El Salvador and in the future in other countries Bitcoin is now a topic to be taught at school in El Salvador and in the future in other countries Bitcoin is now a topic to be taught at school in El Salvador and in the future in other countries',
       id: '1',
@@ -34,7 +34,7 @@ export const blogList: BlogListType = {
       title: 'Benin community joining the Network 2',
       category: 'network',
       tags: ['network', 'bitcoin'],
-      author: 'Doe Irva',
+      author: 'Rogzy',
       createdAt: new Date(),
       featuredImage:
         'https://planb.network/cdn/f346b207c81e4bcf5335c947690bb00c758a4f97/resources/conference/lecture-rockstardev/assets/thumbnail.webp',
@@ -48,7 +48,7 @@ export const blogList: BlogListType = {
       title: 'Benin community joining the Network 3',
       category: 'course',
       tags: ['network', 'bitcoin'],
-      author: 'Doe Irva',
+      author: 'Rogzy',
       createdAt: new Date(),
       featuredImage:
         'https://planb.network/cdn/f346b207c81e4bcf5335c947690bb00c758a4f97/resources/conference/lecture-rockstardev/assets/thumbnail.webp',
@@ -62,7 +62,7 @@ export const blogList: BlogListType = {
       title: 'Benin community joining the Network 4',
       category: 'network',
       tags: ['network', 'bitcoin'],
-      author: 'Doe Irva',
+      author: 'Rogzy',
       createdAt: new Date(),
       featuredImage:
         'https://planb.network/cdn/f346b207c81e4bcf5335c947690bb00c758a4f97/resources/conference/lecture-rockstardev/assets/thumbnail.webp',
@@ -76,7 +76,7 @@ export const blogList: BlogListType = {
       title: 'Benin community joining the Network 5',
       category: 'patch',
       tags: ['network', 'bitcoin'],
-      author: 'Doe Irva',
+      author: 'Rogzy',
       createdAt: new Date(),
       featuredImage:
         'https://planb.network/cdn/f346b207c81e4bcf5335c947690bb00c758a4f97/resources/conference/lecture-rockstardev/assets/thumbnail.webp',

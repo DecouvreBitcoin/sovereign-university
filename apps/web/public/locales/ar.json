@@ -59,7 +59,10 @@
         "visualContent": {
             "description": "Dieser Inhalt sind Rohdaten für deine Projekte.",
             "title": "Visueller Inhalt"
-        }
+        },
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "Abstrakt",
@@ -78,7 +81,12 @@
     },
     "builders": {
         "pageSubtitle": "Dieses Portal ist Open Source & offen für Ergänzungen. Vielen Dank fürs bewerten und teilen!",
-        "pageTitle": "Das Builder Portal"
+        "pageTitle": "Das Builder Portal",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "courses": {
         "categories": {
@@ -164,7 +172,12 @@
             "s2t1": "Bitcoin-Bildung ist eine Reise ohne Ziel",
             "s3PickLevel": "Level wählen:",
             "s3PickTopic": "Themen wählen:",
-            "s3t1": "Alle Kurse sind nach deren Hauptthema benannt"
+            "s3t1": "Alle Kurse sind nach deren Hauptthema benannt",
+            "journey": "",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "seeCourse": ""
         },
         "footer": {
             "": ""
@@ -227,7 +240,13 @@
             "resumeLesson": "Resume the lesson",
             "completed": "",
             "details": "",
-            "inprogress": ""
+            "inprogress": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "startCourse": ""
         },
         "account": "",
         "courses": "",
@@ -251,7 +270,28 @@
             "upcomingTicketTitle": "",
             "upcomingTicketSubtitle": ""
         },
-        "bookings": ""
+        "bookings": "",
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        },
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        }
     },
     "events": {
         "introduction": {
@@ -426,7 +466,9 @@
         "supportUsDescription": "Finden Sie Wege, uns zu unterstützen, auf irgendeine Weise",
         "teachersDescription": "Lernen Sie unsere Universitätslehrer kennen, entschuldigen Sie Bitcoiner",
         "walletsDescription": "Sichern und verwenden Sie Ihre Bitcoins",
-        "conferencesDescription": ""
+        "conferencesDescription": "",
+        "bCertificateDescription": "",
+        "loginRegister": ""
     },
     "nodeNetwork": {
         "answer1": "A node is simply a bitcoin community that wants to move to the next step and accelerate its own local Bitcoin adoption ! There is no minimum size to start with.",
@@ -500,7 +542,8 @@
     },
     "settings": {
         "changePassword": "Change password",
-        "changeEmail": "Change email"
+        "changeEmail": "Change email",
+        "changeProfilePicture": ""
     },
     "tutorials": {
         "details": {
@@ -645,7 +688,9 @@
             "advanced": "Erweitert",
             "beginner": "Anfänger",
             "developer": "developer",
-            "intermediate": "Mittler"
+            "intermediate": "Mittler",
+            "level": "",
+            "levels": ""
         },
         "library": "Bibliothek",
         "lightning": "Blitz",
@@ -696,7 +741,20 @@
         "on": "",
         "online": "",
         "ticket": "",
-        "tickets": ""
+        "tickets": "",
+        "bCertificate": "",
+        "paid": "",
+        "all": "",
+        "courseId": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "price": "",
+        "professor": "",
+        "start": "",
+        "topics": "",
+        "view": ""
     },
     "conferences": {
         "topics": "",
@@ -727,5 +785,22 @@
         "terms": "",
         "feeDistribution": "",
         "total": ""
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "readChart": ""
     }
 }

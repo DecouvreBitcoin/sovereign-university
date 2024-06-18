@@ -59,7 +59,10 @@
         "visualContent": {
             "description": "Este contenido es datos visuales sin formato, para ser usado para tus creaciones.",
             "title": "Contenido visual"
-        }
+        },
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "Abstracto",
@@ -82,7 +85,9 @@
         "languages": "Lenguajes",
         "otherCommunities": "Explora las comunidades de Plan B",
         "networkStrength": "La fuerza de una red yace en sus miembros",
-        "relatedWork": "Proyectos Relacionados"
+        "relatedWork": "Proyectos Relacionados",
+        "noRelatedEvents": "",
+        "relatedEvents": ""
     },
     "courses": {
         "categories": {
@@ -114,7 +119,8 @@
             "live": {
                 "title": "",
                 "stayTuned": ""
-            }
+            },
+            "nextLesson": ""
         },
         "details": {
             "accessible": "Accesible: por vida",
@@ -167,7 +173,12 @@
             "s2t1": "La educación en Bitcoin es un viaje no un destino",
             "s3PickLevel": "Elegir niveles :",
             "s3PickTopic": "Elegir temas :",
-            "s3t1": "Construye tu propio camino a través del agujero del conejo"
+            "s3t1": "Construye tu propio camino a través del agujero del conejo",
+            "journey": "",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "seeCourse": ""
         },
         "footer": {
             "": ""
@@ -230,11 +241,58 @@
             "resumeLesson": "Reanudar la sesión",
             "completed": "",
             "details": "",
-            "inprogress": ""
+            "inprogress": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "startCourse": ""
         },
         "account": "",
         "courses": "",
-        "logout": ""
+        "logout": "",
+        "booking": {
+            "upcomingTicketTitle": "",
+            "accessLive": "",
+            "billingTitle": "",
+            "billingSubtitle": "",
+            "downloadInvoice": "",
+            "downloadTicket": "",
+            "invoiceDate": "",
+            "invoiceType": "",
+            "ticketDate": "",
+            "ticketLocation": "",
+            "ticketTitle": "",
+            "ticketType": "",
+            "noInvoice": "",
+            "noTicket": "",
+            "pastTicketTitle": "",
+            "upcomingTicketSubtitle": "",
+            "invoiceTitle": ""
+        },
+        "bookings": "",
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        },
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        }
     },
     "events": {
         "introduction": {
@@ -353,7 +411,8 @@
             "subtitle2": "¡Te necesitamos!",
             "content1": "En PlanB, creemos que Bitcoin es una revolución internacional que afecta a todos. Para capacitar a miles de millones de personas, diseñamos esta plataforma para que sea multilingüe y accesible para todos. La plataforma soporta actualmente 7 idiomas y se añaden más cada mes. Para lograrlo, utilizamos una mezcla de IA y la pasión de los bitcoineros en todo el mundo.",
             "content2": "¡También puedes empezar a arrancar tu propia red local en tu país!",
-            "link": "Ayúdanos a traducir la academia"
+            "link": "Ayúdanos a traducir la academia",
+            "availableLanguages": ""
         },
         "patreonSection": {
             "title": "¡Juntos vamos a mejorar la educación en Bitcoin! ",
@@ -408,7 +467,9 @@
         "supportUsDescription": "Encuentra formas de apoyarnos, de cualquier manera",
         "teachersDescription": "Conoce a nuestros profesores universitarios, entusiastas de Bitcoin",
         "walletsDescription": "Asegura y utiliza tus bitcoins",
-        "conferencesDescription": ""
+        "conferencesDescription": "",
+        "bCertificateDescription": "",
+        "loginRegister": ""
     },
     "nodeNetwork": {
         "answer1": "Un nodo es simplemente una comunidad de Bitcoin que desea avanzar al siguiente nivel y acelerar su propia adopción local de Bitcoin. No hay un tamaño mínimo para comenzar.",
@@ -482,7 +543,8 @@
     },
     "settings": {
         "changePassword": "Cambiar contraseña",
-        "changeEmail": "Change email"
+        "changeEmail": "Change email",
+        "changeProfilePicture": ""
     },
     "tutorials": {
         "details": {
@@ -565,7 +627,19 @@
         "others": {
             "title": "",
             "shortDescription": "",
-            "description": ""
+            "description": "",
+            "DIY": {
+                "description": ""
+            },
+            "OpenSource": {
+                "description": ""
+            },
+            "contribution": {
+                "description": ""
+            },
+            "general": {
+                "description": ""
+            }
         }
     },
     "underConstruction": {
@@ -615,7 +689,9 @@
             "advanced": "Avanzado",
             "beginner": "Principiante",
             "developer": "desarrollador",
-            "intermediate": "Intermedio"
+            "intermediate": "Intermedio",
+            "level": "",
+            "levels": ""
         },
         "library": "Biblioteca",
         "lightning": "Lightning",
@@ -659,7 +735,27 @@
         "wallets": "Billeteras",
         "date": "",
         "time": "",
-        "to": ""
+        "to": "",
+        "topics": "",
+        "view": "",
+        "all": "",
+        "bCertificate": "",
+        "billing": "",
+        "courseId": "",
+        "description": "",
+        "download": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "invoice": "",
+        "on": "",
+        "online": "",
+        "paid": "",
+        "price": "",
+        "professor": "",
+        "start": "",
+        "ticket": "",
+        "tickets": ""
     },
     "conferences": {
         "addConferences": "",
@@ -690,5 +786,22 @@
         "terms": "",
         "feeDistribution": "",
         "total": ""
+    },
+    "bCertificate": {
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "organizeDescription": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

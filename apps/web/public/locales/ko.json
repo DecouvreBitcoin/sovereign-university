@@ -67,7 +67,9 @@
             "advanced": "",
             "beginner": "",
             "developer": "",
-            "intermediate": ""
+            "intermediate": "",
+            "level": "",
+            "levels": ""
         },
         "library": "",
         "lightning": "",
@@ -114,7 +116,20 @@
         "update": "",
         "video": "",
         "videos": "",
-        "wallets": ""
+        "wallets": "",
+        "all": "",
+        "bCertificate": "",
+        "courseId": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "paid": "",
+        "price": "",
+        "professor": "",
+        "start": "",
+        "topics": "",
+        "view": ""
     },
     "auth": {
         "accountCreated": "",
@@ -153,7 +168,10 @@
         "visualContent": {
             "description": "",
             "title": ""
-        }
+        },
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "",
@@ -172,7 +190,12 @@
     },
     "builders": {
         "pageSubtitle": "",
-        "pageTitle": ""
+        "pageTitle": "",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "conferences": {
         "addConferences": "",
@@ -278,7 +301,12 @@
             "s2t1": "",
             "s3PickLevel": "",
             "s3PickTopic": "",
-            "s3t1": ""
+            "s3t1": "",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "journey": "",
+            "seeCourse": ""
         },
         "footer": {
             "": ""
@@ -358,7 +386,34 @@
             "completed": "",
             "details": "",
             "inprogress": "",
-            "resumeLesson": ""
+            "resumeLesson": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "startCourse": ""
+        },
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        },
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
         }
     },
     "events": {
@@ -528,7 +583,9 @@
         "sponsorsDescription": "",
         "supportUsDescription": "",
         "teachersDescription": "",
-        "walletsDescription": ""
+        "walletsDescription": "",
+        "bCertificateDescription": "",
+        "loginRegister": ""
     },
     "nodeNetwork": {
         "answer1": "",
@@ -607,7 +664,9 @@
         "publicGrade": ""
     },
     "settings": {
-        "changePassword": ""
+        "changePassword": "",
+        "changeProfilePicture": "",
+        "changeEmail": ""
     },
     "tutorials": {
         "details": {
@@ -710,5 +769,22 @@
         "p1": "",
         "p2": "",
         "pageTitle": ""
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

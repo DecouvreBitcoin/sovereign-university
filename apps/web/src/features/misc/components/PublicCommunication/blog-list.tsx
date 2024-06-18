@@ -16,8 +16,8 @@ export const BlogList = (props: { blogList: BlogBlock[] }) => {
         Latest blog post
       </h3>
 
-      <div className="mb-[47px] text-start flex flex-col lg:flex-row mx-auto justify-center bg-newGray-6 px-[8px] py-[10px] lg:p-[30px] w-full max-w-[290px] lg:max-w-[1120px] lg:space-x-[20px] rounded-sm lg:rounded-[30px] items-center">
-        <div className="flex-1 max-w-[530px] order-2 lg:order-1">
+      <div className="mb-[47px] text-start flex flex-col mx-auto lg:mx-0 md:flex-row justify-center bg-newGray-6 px-[8px] py-[10px] lg:p-[30px] w-full max-w-[290px] md:max-w-[1120px] rounded-sm lg:rounded-[30px] items-center">
+        <div className="flex-1 w-full max-w-[530px] order-2 lg:order-1">
           <h2 className="text-darkOrange-5 mb-[8px] text-[18px] font-medium leading-[24px] lg:mb-[22px] lg:text-[48px] lg:leading-[56px]">
             {props.blogList[0].title}
           </h2>
@@ -48,7 +48,7 @@ export const BlogList = (props: { blogList: BlogBlock[] }) => {
           </div>
         </div>
 
-        <div className="mb-3 lg:mb-0 lg:max-w-[510px w-full mx-auto order-1 lg:order-2">
+        <div className="mb-3 md:mr-[20px] lg:mr-0 lg:ml-[20px] lg:mb-0 lg:max-w-[510px w-full flex-1 mx-auto order-1 lg:order-2">
           <img
             className="rounded-sm lg:rounded-[20px]"
             src={props.blogList[0].featuredImage}

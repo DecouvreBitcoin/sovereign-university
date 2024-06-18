@@ -6,7 +6,7 @@ const ContactInfo = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-[1440px] flex flex-col justify-start lg:text-start text-center">
+    <div className="max-w-[1140px] container mx-auto flex flex-col lg:justify-start lg:text-start text-center">
       <h2 className="text-black text-[40px] font-medium mb-[34px]">
         {t('publicCommunication.contactdata.contactTitle')}
       </h2>{' '}
@@ -42,7 +42,7 @@ const GeneralInfo = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="container mx-auto max-w-[1140px] ">
       <h2 className="text-black text-[40px] font-medium mb-[34px]">
         {t('publicCommunication.generalinfo.generaltitle')}
       </h2>{' '}
@@ -66,7 +66,7 @@ const CookiesInfo = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="container mx-auto max-w-[1140px] ">
       <h2 className="text-black text-[40px] font-medium mb-[34px]">
         {t('publicCommunication.cookiesinfo.cookiestitle')}
       </h2>{' '}
@@ -90,7 +90,7 @@ const PrivacyInfo = () => {
   const { t } = useTranslation();
 
   return (
-    <div>
+    <div className="container mx-auto max-w-[1140px] ">
       <h2 className="text-black text-[40px] font-medium mb-[34px]">
         {t('publicCommunication.privacyinfo.privacytitle')}
       </h2>{' '}

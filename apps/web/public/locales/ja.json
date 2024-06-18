@@ -59,7 +59,10 @@
         "visualContent": {
             "description": "このコンテンツは、あなたの作品に使用される生のビジュアル・データです。",
             "title": "ビジュアル・コンテンツ"
-        }
+        },
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "抜粋",
@@ -78,7 +81,12 @@
     },
     "builders": {
         "pageSubtitle": "このポータルはオープンソースであり、いつでも支援を受け付けています。評価と共有に感謝します！",
-        "pageTitle": "開発者ポータル"
+        "pageTitle": "開発者ポータル",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "courses": {
         "categories": {
@@ -164,7 +172,12 @@
             "s2t1": "ビットコイン学習は、目的地ではなく旅そのものです",
             "s3PickLevel": "レベル選択：",
             "s3PickTopic": "トピック選択：",
-            "s3t1": "ラビットホールに自分だけの道を作ろう"
+            "s3t1": "ラビットホールに自分だけの道を作ろう",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "journey": "",
+            "seeCourse": ""
         },
         "footer": {
             "": ""
@@ -227,7 +240,13 @@
             "resumeLesson": "Resume the lesson",
             "completed": "",
             "details": "",
-            "inprogress": ""
+            "inprogress": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "startCourse": ""
         },
         "account": "",
         "courses": "",
@@ -251,7 +270,28 @@
             "upcomingTicketTitle": "",
             "upcomingTicketSubtitle": ""
         },
-        "bookings": ""
+        "bookings": "",
+        "profile": {
+            "edit": "",
+            "change": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        },
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        }
     },
     "events": {
         "introduction": {
@@ -426,7 +466,9 @@
         "supportUsDescription": "私たちをぜひサポートしてください（どのような方法でも構いません！）",
         "teachersDescription": "私たちの講師陣は情熱的なビットコイナーです",
         "walletsDescription": "ビットコインを安全に使用する",
-        "conferencesDescription": ""
+        "conferencesDescription": "",
+        "loginRegister": "",
+        "bCertificateDescription": ""
     },
     "nodeNetwork": {
         "answer1": "A node is simply a bitcoin community that wants to move to the next step and accelerate its own local Bitcoin adoption ! There is no minimum size to start with.",
@@ -500,7 +542,8 @@
     },
     "settings": {
         "changePassword": "パスワードを変更する",
-        "changeEmail": "Change email"
+        "changeEmail": "Change email",
+        "changeProfilePicture": ""
     },
     "tutorials": {
         "details": {
@@ -645,7 +688,9 @@
             "advanced": "上級者向け",
             "beginner": "初心者向け",
             "developer": "開発者",
-            "intermediate": "中級者向け"
+            "intermediate": "中級者向け",
+            "level": "",
+            "levels": ""
         },
         "library": "ライブラリ",
         "lightning": "ライトニング",
@@ -696,7 +741,20 @@
         "on": "",
         "online": "",
         "ticket": "",
-        "tickets": ""
+        "tickets": "",
+        "all": "",
+        "bCertificate": "",
+        "courseId": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "paid": "",
+        "price": "",
+        "professor": "",
+        "start": "",
+        "topics": "",
+        "view": ""
     },
     "conferences": {
         "details": {
@@ -727,5 +785,22 @@
         "terms": "",
         "feeDistribution": "",
         "total": ""
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

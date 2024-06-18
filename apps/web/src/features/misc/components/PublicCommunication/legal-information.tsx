@@ -139,12 +139,12 @@ export const LegalInformation = () => {
 
   return (
     <Tabs.Root
-      className="TabsRoot px-3"
+      className="TabsRoot"
       value={activeSubTab}
       onValueChange={setActiveSubTab}
     >
       <Tabs.List
-        className="TabsList flex flex-row justify-center mx-auto lg:pb-[40px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
+        className="TabsList hidden lg:flex flex-row justify-center mx-auto lg:pb-[40px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
         aria-label="Manage your account"
         role="tablist"
       >
@@ -164,6 +164,29 @@ export const LegalInformation = () => {
           </Tabs.Trigger>
         ))}
       </Tabs.List>
+
+      {/* Mobile Select */}
+      <div className="flex justify-center mx-auto lg:hidden mb-4">
+        <select
+          className="w-full max-w-[290px] p-2 border border-darkOrange-5 text-black font-medium focus:border-darkOrange-5 focus:outline-none active:border-darkOrange-5 bg-transparent rounded-md"
+          value={activeSubTab}
+          onChange={(e) => setActiveSubTab(e.target.value)}
+        >
+          {legalTabs.map((tab) => (
+            <option
+              key={tab.id}
+              value={tab.id}
+              className={
+                activeSubTab === tab.id
+                  ? 'font-medium text-black'
+                  : 'font-normal text-black'
+              }
+            >
+              {t(tab.label)}
+            </option>
+          ))}
+        </select>
+      </div>
 
       {legalTabs.map((tab) => (
         <Tabs.Content

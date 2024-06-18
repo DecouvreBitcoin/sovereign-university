@@ -43,12 +43,13 @@ export const BlogsNews = () => {
 
   return (
     <Tabs.Root
-      className="TabsRoot px-3"
+      className="TabsRoot"
       value={selectedMainTab}
       onValueChange={handleMainTabChange}
     >
+      {/* Desktop Tabs */}
       <Tabs.List
-        className="TabsList flex flex-row justify-center mx-auto lg:pb-[40px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
+        className="TabsList hidden lg:flex flex-row justify-center mx-auto lg:pb-[40px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
         aria-label="Manage your account"
         role="tablist"
       >
@@ -68,6 +69,29 @@ export const BlogsNews = () => {
           </Tabs.Trigger>
         ))}
       </Tabs.List>
+
+      {/* Mobile Select */}
+      <div className="flex justify-center mx-auto lg:hidden mb-4">
+        <select
+          className="w-full max-w-[290px] p-2 border border-darkOrange-5 text-black font-medium focus:border-darkOrange-5 focus:outline-none active:border-darkOrange-5 bg-transparent rounded-md"
+          value={selectedMainTab}
+          onChange={(e) => setSelectedMainTab(e.target.value)}
+        >
+          {blogTabs.map((tab) => (
+            <option
+              key={tab.id}
+              value={tab.id}
+              className={
+                selectedMainTab === tab.id
+                  ? 'font-medium text-black'
+                  : 'font-normal text-black'
+              }
+            >
+              {t(tab.label)}
+            </option>
+          ))}
+        </select>
+      </div>
 
       <div className="flex flex-row text-center lg:justify-start lg:text-start space-x-[21px]">
         <BlogList

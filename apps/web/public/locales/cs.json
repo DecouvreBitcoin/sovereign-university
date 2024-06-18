@@ -59,7 +59,10 @@
             "title": "Vizuální obsah"
         },
         "contribute": "Tento balíček nástrojů je otevřený k přispívání. Používá Figmu, takže kdokoli může přidávat, upravovat a překládat. Pokud chcete na tomto projektu spolupracovat, přidat kategorii nebo diskutovat, neváhejte se připojit k našemu discordu.",
-        "pageDescription": "Univerzita Sovereign podporuje pedagogy a místní komunity po celém světě, aby pomohla rozšířit přijetí bitcoinu. Za tímto účelem shromažďujeme a zpřístupňujeme rozsáhlou databázi vzdělávacího obsahu (vytvořeného námi i jinými subjekty) a také vizuálních dat."
+        "pageDescription": "Univerzita Sovereign podporuje pedagogy a místní komunity po celém světě, aby pomohla rozšířit přijetí bitcoinu. Za tímto účelem shromažďujeme a zpřístupňujeme rozsáhlou databázi vzdělávacího obsahu (vytvořeného námi i jinými subjekty) a také vizuálních dat.",
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "Abstrakt",
@@ -78,7 +81,12 @@
     },
     "builders": {
         "pageSubtitle": "Tento portál je open source a je otevřen pro přispívání.",
-        "pageTitle": "Portál pro stavitele"
+        "pageTitle": "Portál pro stavitele",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "conferences": {
         "addConferences": "Neváhejte přidat chybějící konference prostřednictvím tohoto <0>Github</0> repozitáře.",
@@ -184,7 +192,12 @@
             "s3t1": "Sestavte si svou vlastní cestu dolů králičí norou",
             "footerTitle": "Naši vyučující jsou tu pro vás!",
             "footerp1": "Na Univerzitě Sovereign mají naši profesoři naprostou svobodu v rozhodování o obsahu a nástrojích, které chtějí, abyste prozkoumali, pokud se řídí etickým kodexem. Jsou to vášniví bitcoineři z různých prostředí.",
-            "pageDescription": "Cílem Plan B Academy je zjednodušit vzdělávání v oblasti bitcoinu po celém světě. Akademie, kterou tvoří odborníci z různých oborů, nabízí množství kurzů zaměřených na demystifikaci všech aspektů bitcoinu. Věříme, že vám akademie pomůže lépe porozumět rozsáhlému tématu, kterým je Bitcoin, a to od začátečníků až po experty, ať už vlastním tempem, nebo pod vedením vyučujícího každý týden. Velká část našich kurzů je zcela zdarma, takže přístup ke vzdělání může mít kdokoli a kdekoli."
+            "pageDescription": "Cílem Plan B Academy je zjednodušit vzdělávání v oblasti bitcoinu po celém světě. Akademie, kterou tvoří odborníci z různých oborů, nabízí množství kurzů zaměřených na demystifikaci všech aspektů bitcoinu. Věříme, že vám akademie pomůže lépe porozumět rozsáhlému tématu, kterým je Bitcoin, a to od začátečníků až po experty, ať už vlastním tempem, nebo pod vedením vyučujícího každý týden. Velká část našich kurzů je zcela zdarma, takže přístup ke vzdělání může mít kdokoli a kdekoli.",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "journey": "",
+            "seeCourse": ""
         },
         "part": {
             "count": "Část {{count}}"
@@ -263,9 +276,36 @@
             "completed": "Dokončené kurzy",
             "details": "Detaily",
             "inprogress": "Probíhající kurzy",
-            "resumeLesson": "Pokračovat lekci"
+            "resumeLesson": "Pokračovat lekci",
+            "seeProgress": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "startCourse": ""
         },
-        "courses": "Kurzy"
+        "courses": "Kurzy",
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        },
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        }
     },
     "events": {
         "card": {
@@ -434,7 +474,9 @@
         "btc101Description": "Získejte lepší představu o bitcoinu díky této lekci",
         "buildersDescription": "Seznamte se společnostmi a projekty, které pracují na zlepšování bitcoinu a zvyšování jeho přijetí",
         "nodeDescription": "Naučte se, jak být samostatný s vlastním uzlem Bitcoin",
-        "teachersDescription": "Seznamte se s našimi univerzitními vyučujícími, vášnivými bitcoinery"
+        "teachersDescription": "Seznamte se s našimi univerzitními vyučujícími, vášnivými bitcoinery",
+        "loginRegister": "",
+        "bCertificateDescription": ""
     },
     "nodeNetwork": {
         "answer3": "Chcete-li se stát součástí sítě, musíme se shodnout na některých základních hodnotách, kterými jsou:\n - být výhradně bitcoinový \n - vážit si soukromí \n - starat se o práci s otevřeným zdrojovým kódem.",
@@ -513,7 +555,9 @@
         "pageDescription": "Snažit se porozumět Bitcoinu je jako prozkoumávat bludiště, které se neustále zvětšuje. Abychom vám na této cestě pomohli, připravili jsme pro vás širokou nabídku materiálů včetně knih, podcastů, videí a záznamů z konferencí. Tento portál shromažďuje všechny informace v jednom repozitáři Github, aby vám pomohl lépe pochopit ekosystém Bitcoinu."
     },
     "settings": {
-        "changePassword": "Změnit heslo"
+        "changePassword": "Změnit heslo",
+        "changeProfilePicture": "",
+        "changeEmail": ""
     },
     "tutorials": {
         "details": {
@@ -659,7 +703,9 @@
             "advanced": "Pokročilý",
             "beginner": "Začátečník",
             "intermediate": "Mírně pokročilý",
-            "developer": "vývojář"
+            "developer": "vývojář",
+            "level": "",
+            "levels": ""
         },
         "library": "Knihovna",
         "lightning": "Lightning",
@@ -709,6 +755,36 @@
         "course": "Kurz",
         "exchanges": "Směnárny",
         "movieDocumentary": "Dokumentární film",
-        "register": "Registrovat"
+        "register": "Registrovat",
+        "courseId": "",
+        "price": "",
+        "professor": "",
+        "all": "",
+        "bCertificate": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "paid": "",
+        "start": "",
+        "topics": "",
+        "view": ""
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

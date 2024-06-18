@@ -59,7 +59,10 @@
         "visualContent": {
             "description": "Tämä sisältö on raakaa visuaalista dataa, jota voit käyttää omiin luomuksiisi.",
             "title": "Visuaalinen sisältö"
-        }
+        },
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "Abstrakti",
@@ -78,7 +81,12 @@
     },
     "builders": {
         "pageSubtitle": "Tämä portaali on avointa lähdekoodia ja avoin muokkauksille.",
-        "pageTitle": "Kehittäjä-portaali"
+        "pageTitle": "Kehittäjä-portaali",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "courses": {
         "categories": {
@@ -164,7 +172,12 @@
             "s2t1": "Bitcoin-kouluttautuminen on matka, ei määränpää",
             "s3PickLevel": "Valitse tasot :",
             "s3PickTopic": "Valitse aiheet :",
-            "s3t1": "Rakenna oma polkusi kaninkolon syövereihin"
+            "s3t1": "Rakenna oma polkusi kaninkolon syövereihin",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "journey": "",
+            "seeCourse": ""
         },
         "footer": {
             "": ""
@@ -227,7 +240,13 @@
             "resumeLesson": "Jatka luentoa",
             "completed": "Suoritetut luennot",
             "details": "Tiedot",
-            "inprogress": "Keskeneräiset luennot"
+            "inprogress": "Keskeneräiset luennot",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "startCourse": ""
         },
         "account": "Tili",
         "courses": "Luennot",
@@ -251,7 +270,28 @@
             "upcomingTicketTitle": "Tulevat",
             "pastTicketTitle": "Aiemmat"
         },
-        "bookings": "Tilaukset"
+        "bookings": "Tilaukset",
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        },
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        }
     },
     "events": {
         "introduction": {
@@ -426,7 +466,9 @@
         "supportUsDescription": "Löydä tapoja tukea meitä, millä tahansa tavalla",
         "teachersDescription": "Tutustu opistomme yliopisto-kouluttajiin, intohimoisiin bitcoinereihin",
         "walletsDescription": "Turvaa ja käytä bitcoinejasi",
-        "conferencesDescription": "Kokoelma Bitcoin-konferenssitallenteista ennen The Genesis Blockkia"
+        "conferencesDescription": "Kokoelma Bitcoin-konferenssitallenteista ennen The Genesis Blockkia",
+        "bCertificateDescription": "",
+        "loginRegister": ""
     },
     "nodeNetwork": {
         "answer1": "PlanB node on yksinkertaisesti paikallinen bitcoin-yhteisö joka tahtoo ottaa seuraavan askeleen ja kiihdyttää bitcoinin käyttöönottoa omalla alueellaan! Yhteisöllä ei ole minimikokoa mistä aloittaa.",
@@ -500,7 +542,8 @@
     },
     "settings": {
         "changePassword": "Vaihda salasana",
-        "changeEmail": "Change email"
+        "changeEmail": "Change email",
+        "changeProfilePicture": ""
     },
     "tutorials": {
         "details": {
@@ -645,7 +688,9 @@
             "advanced": "Edistynyt",
             "beginner": "Aloittelija",
             "developer": "kehittäjä",
-            "intermediate": "Keskitaso"
+            "intermediate": "Keskitaso",
+            "level": "",
+            "levels": ""
         },
         "library": "Kirjasto",
         "lightning": "Lightning",
@@ -696,7 +741,20 @@
         "on": "päällä",
         "online": "Online",
         "ticket": "Pääsylippu",
-        "tickets": "Pääsyliput"
+        "tickets": "Pääsyliput",
+        "paid": "",
+        "price": "",
+        "professor": "",
+        "all": "",
+        "bCertificate": "",
+        "courseId": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "start": "",
+        "topics": "",
+        "view": ""
     },
     "payment": {
         "total": "Yhteensä",
@@ -727,5 +785,22 @@
         "pageTitle": "Konferenssien tallenteet",
         "planBConferences": "Plan B konferenssit",
         "topics": "Aiheet"
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

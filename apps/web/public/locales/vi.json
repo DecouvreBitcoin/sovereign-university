@@ -61,7 +61,12 @@
             "s3t1": "Xây dựng con đường của chính bạn xuyên qua chiếc hang thỏ mang tên Bitcoin",
             "footerp2": "Nếu bạn muốn cải thiện khoá học hoặc cung cấp khoá học của chính mình, bạn có thể làm việc đó một cách dễ dàng thông qua GitHub. Để hỗ trợ giáo sư, bạn có thể chấm điểm khoá học của họ, trực tiếp típ cho giao sư hoặc trở thành một thành viên của trường đại học để hỗ trợ nền tảng.",
             "footerTitle": "Các giáo sư của chúng tôi ở đây cho bạn!",
-            "pageDescription": "Học viên Plan B ra đời nhằm mục đích đơn giản hoá việc giáo dục về Bitcoin trên toàn thế giới. Được tuyển chọn bởi các chuyên gia thuộc nhiều lĩnh vực chuyên môn, học viên cung cấp vô số các khoá học được thiết kế để làm sáng tỏ mọi khía cạnh của Bitcoin. Từ người mới bắt đầu cho đến chuyên giá, dù là học theo tốc độ riêng của bản thân hay được theo dõi hàng tuần bởi một giáo sư, chúng tôi hi vọng rằng học viện có thể giúp bạn hiểu rõ hơn về một chủ đề rất rộng lớn là Bitcoin. Phần lớn các khoá học của chúng tôi là hoàn toàn miễn phí với tất cả mọi người, ở bất kỳ đâu, đều có thể tiếp cận với giáo dục."
+            "pageDescription": "Học viên Plan B ra đời nhằm mục đích đơn giản hoá việc giáo dục về Bitcoin trên toàn thế giới. Được tuyển chọn bởi các chuyên gia thuộc nhiều lĩnh vực chuyên môn, học viên cung cấp vô số các khoá học được thiết kế để làm sáng tỏ mọi khía cạnh của Bitcoin. Từ người mới bắt đầu cho đến chuyên giá, dù là học theo tốc độ riêng của bản thân hay được theo dõi hàng tuần bởi một giáo sư, chúng tôi hi vọng rằng học viện có thể giúp bạn hiểu rõ hơn về một chủ đề rất rộng lớn là Bitcoin. Phần lớn các khoá học của chúng tôi là hoàn toàn miễn phí với tất cả mọi người, ở bất kỳ đâu, đều có thể tiếp cận với giáo dục.",
+            "buildPath": "",
+            "exploreCourses": "",
+            "findCourses": "",
+            "journey": "",
+            "seeCourse": ""
         },
         "payment": {
             "access_invoice": "Bạn có thể truy cập vào hoá đơn của mình trên bảng điều khiển",
@@ -277,7 +282,10 @@
             "title": "Nội dung trực quan"
         },
         "pageDescription": "Sovereign University hỗ trợ các nhà giáo dục bitcoin và các cộng đồng bitcoin trên toàn thế giới, nhằm thúc đẩy quá trình mở rộng sự áp dụng bitcoin. Nhằm hướng tới mục tiêu đó, chúng tôi tập hợp và tạo ra một nguồn dữ liệu lớn bao gồm các nội dung giáo dục (được tạo ra bởi chúng tôi hoặc những người khác) và các dữ liệu trực quan, để mọi người có thể tiếp cận.",
-        "contribute": "Bộ công cụ này là mở để mọi người đóng góp. Nó sử dụng Figma, nên ai cũng có thể thêm, chỉnh sửa hoặc dịch. Để phối hợp, thêm một chuyên mục hay thảo luận, hãy tham gia discord của chúng tôi, đừng ngại."
+        "contribute": "Bộ công cụ này là mở để mọi người đóng góp. Nó sử dụng Figma, nên ai cũng có thể thêm, chỉnh sửa hoặc dịch. Để phối hợp, thêm một chuyên mục hay thảo luận, hãy tham gia discord của chúng tôi, đừng ngại.",
+        "contributeButton": "",
+        "contributeDescription": "",
+        "contributeTitle": ""
     },
     "book": {
         "abstract": "Tóm tắt",
@@ -296,7 +304,12 @@
     },
     "builders": {
         "pageTitle": "Những nhà phát triển Bitcoin",
-        "pageSubtitle": "Cổng này là mã nguồn mở và được mở để mọi người đóng góp."
+        "pageSubtitle": "Cổng này là mã nguồn mở và được mở để mọi người đóng góp.",
+        "networkStrength": "",
+        "noRelatedEvents": "",
+        "otherCommunities": "",
+        "languages": "",
+        "relatedEvents": ""
     },
     "dashboard": {
         "account": "Tài khoản",
@@ -306,7 +319,13 @@
             "completed": "Các khoá học đã hoàn thành",
             "details": "Chi tiết",
             "inprogress": "Các khoá đang học",
-            "resumeLesson": "Tiếp tục bài học"
+            "resumeLesson": "Tiếp tục bài học",
+            "inprogressCoursesDescription": "",
+            "seeProgress": "",
+            "completedCoursesTitle": "",
+            "completedCoursesDescription": "",
+            "inprogressCoursesTitle": "",
+            "startCourse": ""
         },
         "booking": {
             "invoiceTitle": "",
@@ -327,7 +346,28 @@
             "upcomingTicketTitle": "",
             "upcomingTicketSubtitle": ""
         },
-        "bookings": ""
+        "bookings": "",
+        "calendar": {
+            "calendar": "",
+            "personalCalendar": ""
+        },
+        "profile": {
+            "change": "",
+            "edit": "",
+            "cancel": "",
+            "save": "",
+            "saving": "",
+            "crop": "",
+            "preview": "",
+            "displayName": "",
+            "email": "",
+            "password": "",
+            "personalInformation": "",
+            "profileInformation": "",
+            "profilePicture": "",
+            "security": "",
+            "username": ""
+        }
     },
     "home": {
         "header": {
@@ -434,7 +474,9 @@
         "buildersDescription": "Tìm hiểu về những công ty và dự án đang nỗ lực xây dựng Bitcoin trở nên tốt hơn và gia tăng sự mở rộng áp dụng của nó",
         "conferencesDescription": "Tập hợp các bản phát lại của các hội nghị Bitcoin kể từ Genesis Block",
         "exchangesDescription": "Mua và bán bitcoin trên các sàn giao dịch và tìm hiểu về P2P",
-        "merchantsDescription": "Chấp nhận thanh toán bằng bitcoin và khám phá các công cụ cho thương nhân"
+        "merchantsDescription": "Chấp nhận thanh toán bằng bitcoin và khám phá các công cụ cho thương nhân",
+        "bCertificateDescription": "",
+        "loginRegister": ""
     },
     "nodeNetwork": {
         "answer3": "Để trở thành một phần của mạng lưới, bạn cần phù hợp với một số giá trị cốt lõi, bao gồm:\n - chỉ tập trung vào Bitcoin \n - đề cao giá trị quyền riêng tư \n - quan tâm tới các công việc mã nguồn mở.",
@@ -514,7 +556,8 @@
     },
     "settings": {
         "changePassword": "Thay đổi mật khẩu",
-        "changeEmail": "Thay đổi email"
+        "changeEmail": "Thay đổi email",
+        "changeProfilePicture": ""
     },
     "tutorials": {
         "details": {
@@ -657,7 +700,9 @@
             "advanced": "Nâng cao",
             "beginner": "Người mới bắt đầu",
             "intermediate": "Trung cấp",
-            "developer": "lập trình viên"
+            "developer": "lập trình viên",
+            "level": "",
+            "levels": ""
         },
         "library": "Thư viện",
         "lightning": "Lightning",
@@ -710,6 +755,36 @@
         "on": "",
         "online": "",
         "ticket": "",
-        "tickets": ""
+        "tickets": "",
+        "all": "",
+        "bCertificate": "",
+        "courseId": "",
+        "description": "",
+        "duration": "",
+        "edit": "",
+        "free": "",
+        "paid": "",
+        "price": "",
+        "professor": "",
+        "start": "",
+        "topics": "",
+        "view": ""
+    },
+    "bCertificate": {
+        "bCertificateDescription": "",
+        "bookExam": "",
+        "challengeYourself": "",
+        "checkout": "",
+        "curious": "",
+        "joeNakamotoVideo": "",
+        "knowledgeableBitcoin": "",
+        "noBookExam": "",
+        "organizeDescription": "",
+        "organizeExam": "",
+        "organizeSubtitle": "",
+        "organizeTitle": "",
+        "pageSubtitle": "",
+        "pageTitle": "",
+        "readChart": ""
     }
 }

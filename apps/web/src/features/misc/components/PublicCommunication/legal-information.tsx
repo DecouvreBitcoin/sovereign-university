@@ -7,28 +7,28 @@ const ContactInfo = () => {
 
   return (
     <div className="max-w-[1140px] container mx-auto flex flex-col lg:justify-start lg:text-start text-center">
-      <h2 className="text-black text-[40px] font-medium mb-[34px]">
+      <h2 className="text-black mobile-h2 lg:desktop-h3 mb-[34px]">
         {t('publicCommunication.contactdata.contactTitle')}
       </h2>{' '}
-      <div className="text-black font-medium mb-[34px]">
+      <div className="text-black mobile-subtitle1 lg:desktop-subtitle1 mb-[34px]">
         {t('publicCommunication.contactdata.organizationNameSubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.contactdata.organizationName')}
       </p>
-      <div className="text-black font-medium mb-[34px]">
+      <div className="text-black mobile-subtitle1 lg:desktop-subtitle1 mb-[34px]">
         {t('publicCommunication.contactdata.taxNumberSubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.contactdata.taxNumber')}
       </p>
-      <div className="text-black font-medium mb-[34px]">
+      <div className="text-black mobile-subtitle1 lg:desktop-subtitle1 mb-[34px]">
         {t('publicCommunication.contactdata.emailSubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.contactdata.emailValue')}
       </p>
-      <div className="text-black font-medium mb-[34px]">
+      <div className="text-black mobile-subtitle1 lg:desktop-subtitle1 mb-[34px]">
         {t('publicCommunication.contactdata.addressSubtitle')}
       </div>
       <p className="text-black mb-[34px]">
@@ -43,16 +43,16 @@ const GeneralInfo = () => {
 
   return (
     <div className="container mx-auto max-w-[1140px] ">
-      <h2 className="text-black text-[40px] font-medium mb-[34px]">
+      <h2 className="text-black mobile-h2 lg:desktop-h3 mb-[34px]">
         {t('publicCommunication.generalinfo.generaltitle')}
       </h2>{' '}
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.generalinfo.generalsubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.generalinfo.firstparagraph')}
       </p>
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.generalinfo.provisionsubtitle')}
       </div>
       <p className="text-black mb-[34px]">
@@ -67,16 +67,16 @@ const CookiesInfo = () => {
 
   return (
     <div className="container mx-auto max-w-[1140px] ">
-      <h2 className="text-black text-[40px] font-medium mb-[34px]">
+      <h2 className="text-black mobile-h2 lg:desktop-h3 mb-[34px]">
         {t('publicCommunication.cookiesinfo.cookiestitle')}
       </h2>{' '}
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.cookiesinfo.cookiessubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.cookiesinfo.cookiesfirstparagraph')}
       </p>
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.cookiesinfo.cookiessubtitle2')}
       </div>
       <p className="text-black mb-[34px]">
@@ -91,16 +91,16 @@ const PrivacyInfo = () => {
 
   return (
     <div className="container mx-auto max-w-[1140px] ">
-      <h2 className="text-black text-[40px] font-medium mb-[34px]">
+      <h2 className="text-black mobile-h2 lg:desktop-h3 mb-[34px]">
         {t('publicCommunication.privacyinfo.privacytitle')}
       </h2>{' '}
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.privacyinfo.privacysubtitle')}
       </div>
       <p className="text-black mb-[34px]">
         {t('publicCommunication.privacyinfo.privacyfirstparagraph')}
       </p>
-      <div className="text-black mb-[34px] font-medium">
+      <div className="text-black mb-[34px] mobile-subtitle1 lg:desktop-subtitle1">
         {t('publicCommunication.privacyinfo.privacysubtitle2')}
       </div>
       <p className="text-black mb-[34px]">

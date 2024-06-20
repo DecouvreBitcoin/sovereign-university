@@ -1,6 +1,7 @@
 import { createRoute } from '@tanstack/react-router';
 
 import { rootRoute } from '../../routes/root.tsx';
+import { BlogDetail } from '../misc/components/PublicCommunication/blog-detail.tsx';
 
 import { About } from './pages/about.tsx';
 import { BCertificate } from './pages/b-certificate.tsx';
@@ -93,6 +94,12 @@ export const publicCommunicationRoute = createRoute({
   component: PublicCommunicationPage,
 });
 
+export const blogDetailRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: '/blogs/$blogId',
+  component: BlogDetail,
+});
+
 export const miscRoutes = [
   globalNotFoundRoute,
   homeRoute,
@@ -107,4 +114,5 @@ export const miscRoutes = [
   termsAndConditionsROute,
   validateEmailChangeRoute,
   publicCommunicationRoute,
+  blogDetailRoute,
 ];

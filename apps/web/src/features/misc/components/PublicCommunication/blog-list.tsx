@@ -43,7 +43,7 @@ export const BlogList = (props: { blogList: BlogBlock[] }) => {
                 buttonMode="dark"
                 subtitle={blog.category}
                 buttonText="Read more"
-                buttonLink="#"
+                buttonLink={`/blogs/${blog.id}`}
               />
             ))}
           </div>

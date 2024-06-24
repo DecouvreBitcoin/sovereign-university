@@ -7,7 +7,7 @@ export const FeaturedCard = ({ blog }: { blog: BlogBlock }) => {
     <div className="mb-[47px] text-start flex flex-col mx-auto lg:mx-0 md:flex-row justify-center bg-newGray-6 px-[8px] py-[10px] lg:p-[30px] w-full max-w-[290px] md:max-w-[1120px] rounded-sm lg:rounded-[30px] items-center">
       <div className="flex-1 w-full max-w-[530px] order-2 lg:order-1">
         <Link to={`/blogs/${blog.id}`}>
-          <h2 className="text-darkOrange-5 mb-[8px] text-[18px] font-medium leading-[24px] lg:mb-[22px] lg:text-[48px] lg:leading-[56px]">
+          <h2 className="text-darkOrange-5 mb-[8px] lg:mb-[22px]  mobile-h3 lg:desktop-h3">
             {blog.title}
           </h2>
           <div className="flex flex-row space-x-[20px] mb-[8px] lg:mb-[22px] ">

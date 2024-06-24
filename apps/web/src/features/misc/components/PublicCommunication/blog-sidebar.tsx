@@ -19,7 +19,7 @@ const BlogSidebar: React.FC<BlogSidebarProps> = ({
   const isScreenMd = useGreater('md');
 
   return (
-    <div className="hidden md:flex mx-auto bg-newGray-6 p-[10px] rounded-[16px]">
+    <div className="hidden md:block mx-auto bg-newGray-6 p-[10px] rounded-[16px]">
       <div className="flex flex-row items-center py-5">
         <img
           src={Book}

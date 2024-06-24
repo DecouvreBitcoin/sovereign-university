@@ -49,7 +49,7 @@ export const BlogsNews = () => {
     >
       {/* Desktop Tabs */}
       <Tabs.List
-        className="TabsList hidden lg:flex flex-row justify-center mx-auto lg:pb-[40px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
+        className="TabsList hidden lg:flex flex-row justify-center mx-auto lg:pb-[57px] lg:mt-[27px] space-x-[21px] transition-all duration-300"
         aria-label="Manage your account"
         role="tablist"
       >

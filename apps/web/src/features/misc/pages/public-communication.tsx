@@ -36,7 +36,7 @@ export const PublicCommunicationPage = () => {
         onValueChange={setActiveTab}
       >
         <Tabs.List
-          className="TabsList flex flex-row mx-auto justify-center lg:pb-[40px] lg:mt-[27px] border-0 lg:border-b-2 space-x-[21px] transition-all duration-300"
+          className="TabsList flex flex-row mx-auto justify-center lg:pb-[57px] lg:mt-[27px] border-0 lg:border-b-2 space-x-[21px] transition-all duration-300"
           aria-label="Manage your account"
           role="tablist"
         >

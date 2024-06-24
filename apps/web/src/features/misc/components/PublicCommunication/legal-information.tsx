@@ -6,7 +6,7 @@ const ContactInfo = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="max-w-[1140px] container mx-auto flex flex-col lg:justify-start lg:text-start text-center">
+    <div className="max-w-[1140px] container mx-auto flex flex-col lg:justify-start text-start">
       <h2 className="text-black mobile-h2 lg:desktop-h3 mb-[34px]">
         {t('publicCommunication.contactdata.contactTitle')}
       </h2>{' '}
@@ -197,7 +197,7 @@ export const LegalInformation = () => {
           id={`${tab.id}-panel`}
           aria-labelledby={tab.id}
         >
-          <div className="flex flex-row text-center lg:justify-start lg:text-start space-x-[21px] lg:w-[1440px]">
+          <div className="flex flex-row  lg:justify-start text-start space-x-[21px] lg:w-[1440px]">
             <tab.component />
           </div>
 

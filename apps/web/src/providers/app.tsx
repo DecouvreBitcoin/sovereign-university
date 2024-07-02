@@ -2,6 +2,7 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { RouterProvider } from '@tanstack/react-router';
 import {
   type PropsWithChildren,
+  createContext,
   useEffect,
   useLayoutEffect,
   useState,
@@ -17,7 +18,20 @@ import { router } from '../routes/index.tsx';
 import { LANGUAGES } from '../utils/i18n.ts';
 import { trpc } from '../utils/trpc.ts';
 
-import { UserProvider } from './user.tsx';
+import { AppContextProvider } from './context.tsx';
+
+interface LangContext {
+  setCurrentLanguage: (lang: string) => void;
+}
+
+export const LangContext = createContext<LangContext>({
+  setCurrentLanguage: () => {},
+});
+
+const regexp = new RegExp(`^(/(${LANGUAGES.join('|')}))*`);
+const changePathLanguage = (lang: string, path: string) => {
+  return path.replace(regexp, `/${lang}`);
+};
 
 export const AppProvider = ({ children }: PropsWithChildren) => {
   const { i18n } = useTranslation();
@@ -25,7 +39,13 @@ export const AppProvider = ({ children }: PropsWithChildren) => {
   const { trpcQueryClient, trpcClient } = useTrpc();
   const [queryClient] = useState(() => new QueryClient());
 
-  const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
+  const locationLanguage = ((l) => l && (LANGUAGES.includes(l) ? l : null))(
+    location.pathname.split('/')[1],
+  );
+
+  const [currentLanguage, setCurrentLanguage] = useState(
+    locationLanguage ?? i18n.language,
+  );
 
   // Temporary fix: the default language can be en-GB (or equivalent), until it is properly set with the selector
   // and these aren't supported. Fallback to 'en' in that case for now.
@@ -37,28 +57,23 @@ export const AppProvider = ({ children }: PropsWithChildren) => {
   }, [i18n]);
 
   useEffect(() => {
-    if (
-      i18n.language !== currentLanguage &&
-      LANGUAGES.includes(i18n.language)
-    ) {
-      const previousLanguage = currentLanguage;
-      const newLanguage = i18n.language;
-
-      setCurrentLanguage(newLanguage);
-
-      router.update({
-        basepath: newLanguage,
-        context: router.options.context,
-      });
-
-      router.navigate({
-        // TODO: fix this
-        to: window.location.pathname.replace(`/${previousLanguage}`, '') as '/',
-      });
-
-      router.load();
+    if (i18n.language === currentLanguage) {
+      return;
     }
-  }, [currentLanguage, i18n.language, setCurrentLanguage]);
+
+    i18n.changeLanguage(currentLanguage);
+
+    router.update({
+      basepath: currentLanguage,
+      context: router.options.context,
+    });
+
+    router.navigate({
+      to: changePathLanguage(currentLanguage, location.pathname),
+    });
+
+    router.load();
+  }, [currentLanguage, i18n, i18n.language, locationLanguage]);
 
   return (
     <HelmetProvider>
@@ -68,20 +83,22 @@ export const AppProvider = ({ children }: PropsWithChildren) => {
         queryClient={queryClient}
       >
         <QueryClientProvider client={trpcQueryClient}>
-          <UserProvider>
-            <RouterProvider
-              router={router}
-              context={{ i18n }}
-              basepath={currentLanguage}
-            />
-            <PageMeta
-              title={SITE_NAME}
-              description="Let's build together the Bitcoin educational layer"
-              type="website"
-              imageSrc="/share-default.jpg"
-            />
-            {children}
-          </UserProvider>
+          <LangContext.Provider value={{ setCurrentLanguage }}>
+            <AppContextProvider>
+              <RouterProvider
+                router={router}
+                context={{ i18n }}
+                basepath={currentLanguage}
+              />
+              <PageMeta
+                title={SITE_NAME}
+                description="Let's build together the Bitcoin educational layer"
+                type="website"
+                imageSrc="/share-default.jpg"
+              />
+              {children}
+            </AppContextProvider>
+          </LangContext.Provider>
         </QueryClientProvider>
       </trpc.Provider>
     </HelmetProvider>
